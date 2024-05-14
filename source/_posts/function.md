@@ -1,6 +1,6 @@
 ---
-title: logic
-date: 2024-05-06 20:54:49
+title: Function & Tricky Bits
+date: 2024-05-14 12:13:16
 tags: [WesBos,HexSchool,Video]
 categories: [Javascript]
 ---
