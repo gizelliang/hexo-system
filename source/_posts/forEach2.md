@@ -1,18 +1,18 @@
 ---
-title: [Hex]forEach 搭配 DOM做整合
+title: [Hex]forEach搭配DOM做整合
 date: 2024-05-19 15:19:21
 tags: [HexSchool,Video]
 categories: [Javascript]
 ---
-# 網頁希望呈現的畫面
-<blockquote class="imgur-embed-pub" lang="en" data-id="r69I6PY"><a href="//imgur.com/r69I6PY"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-
 ## 決定資料格式(HTML)
 ```html
 <ul class="list">
     <li></li>
 </ul>
 ```
+## 網頁希望呈現的畫面
+<blockquote class="imgur-embed-pub" lang="en" data-id="r69I6PY"><a href="//imgur.com/r69I6PY"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 ## 初始化一個空字串，再塞入ul.list 的innerHTML
 ```js
 let data=[
