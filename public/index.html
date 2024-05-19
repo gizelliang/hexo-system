@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw,en,default">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -17,15 +17,18 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"gizelliang.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"gizelliang.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+  <meta name="description" content="Front-End Web Development">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gizel&#39;s Fantasy">
 <meta property="og:url" content="https://gizelliang.github.io/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:site_name" content="Gizel&#39;s Fantasy">
+<meta property="og:description" content="Front-End Web Development">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:author" content="Fish">
+<meta property="article:tag" content="前端,後端,全端,網頁,技術,網頁開發,前端開發,後端開發,JavaScript,HTML,CSS,SCSS">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://gizelliang.github.io/">
@@ -37,11 +40,11 @@
     sidebar: "",
     isHome : true,
     isPost : false,
-    lang   : 'en'
+    lang   : 'zh-tw'
   };
 </script>
 
-  <title>Hexo</title>
+  <title>Gizel's Fantasy</title>
   
 
 
@@ -72,6 +75,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="Gizel's Fantasy" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -92,9 +96,10 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Hexo</h1>
+      <h1 class="site-title">Gizel's Fantasy</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
+      <p class="site-subtitle" itemprop="description">程式新手轉職血淚史。</p>
   </div>
 
   <div class="site-nav-right">
@@ -111,6 +116,11 @@
         <li class="menu-item menu-item-home">
 
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
 
   </li>
         <li class="menu-item menu-item-tags">
@@ -154,17 +164,651 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw,en,default">
+    <link itemprop="mainEntityOfPage" href="https://gizelliang.github.io/2024/05/19/forEach2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Fish">
+      <meta itemprop="description" content="Front-End Web Development<br/>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gizel's Fantasy">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/05/19/forEach2/" class="post-title-link" itemprop="url">forEach2</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2024-05-19 15:19:21 / Modified: 15:43:20" itemprop="dateCreated datePublished" datetime="2024-05-19T15:19:21+08:00">2024-05-19</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2024/05/19/forEach2/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2024/05/19/forEach2/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="forEach-搭配-DOM做整合"><a href="#forEach-搭配-DOM做整合" class="headerlink" title="forEach 搭配 DOM做整合"></a>forEach 搭配 DOM做整合</h2><h3 id="決定資料格式-HTML"><a href="#決定資料格式-HTML" class="headerlink" title="決定資料格式(HTML)"></a>決定資料格式(HTML)</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;list&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="初始化一個空字串，再塞入ul-list-的innerHTML"><a href="#初始化一個空字串，再塞入ul-list-的innerHTML" class="headerlink" title="初始化一個空字串，再塞入ul.list 的innerHTML"></a>初始化一個空字串，再塞入ul.list 的innerHTML</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> data=[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="title class_">Charge</span>:<span class="string">&quot;Free&quot;</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;Kathy Charge Station&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="title class_">Charge</span>:<span class="string">&quot;Coin&quot;</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;Sophie Charge Station&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="title class_">Charge</span>:<span class="string">&quot;Free&quot;</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;Cecilia Charge Station&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="title class_">Charge</span>:<span class="string">&quot;Coin&quot;</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;George Charge Station&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">]</span><br><span class="line"><span class="keyword">const</span> list = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.list&quot;</span>);</span><br><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;&quot;</span>;</span><br><span class="line">data.<span class="title function_">forEach</span>(<span class="keyword">function</span>(<span class="params">item, index</span>)&#123;</span><br><span class="line">    <span class="keyword">let</span> content = <span class="string">`&lt;li&gt;<span class="subst">$&#123;item.name&#125;</span>, <span class="subst">$&#123;item.Charge&#125;</span>&lt;/li&gt;`</span>;<span class="comment">// 組好list.innerHTML指定的HTML樣式</span></span><br><span class="line">    str += content</span><br><span class="line">   </span><br><span class="line">&#125;)</span><br><span class="line">list.<span class="property">innerHTML</span> = str;</span><br></pre></td></tr></table></figure>
+<h3 id="將要抓資料的forEach部分用function包覆，才可以一開始就在網頁上呈現需要的HTML樣式"><a href="#將要抓資料的forEach部分用function包覆，才可以一開始就在網頁上呈現需要的HTML樣式" class="headerlink" title="將要抓資料的forEach部分用function包覆，才可以一開始就在網頁上呈現需要的HTML樣式"></a>將要抓資料的forEach部分用function包覆，才可以一開始就在網頁上呈現需要的HTML樣式</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> data=[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="title class_">Charge</span>:<span class="string">&quot;Free&quot;</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;Kathy Charge Station&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="title class_">Charge</span>:<span class="string">&quot;Coin&quot;</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;Sophie Charge Station&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="title class_">Charge</span>:<span class="string">&quot;Free&quot;</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;Cecilia Charge Station&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="title class_">Charge</span>:<span class="string">&quot;Coin&quot;</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;George Charge Station&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">init</span>(<span class="params"></span>)&#123;</span><br><span class="line"><span class="keyword">const</span> list = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.list&quot;</span>);</span><br><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;&quot;</span>;</span><br><span class="line">data.<span class="title function_">forEach</span>(<span class="keyword">function</span>(<span class="params">item, index</span>)&#123;</span><br><span class="line">    <span class="keyword">let</span> content = <span class="string">`&lt;li&gt;<span class="subst">$&#123;item.name&#125;</span>, <span class="subst">$&#123;item.Charge&#125;</span>&lt;/li&gt;`</span>;<span class="comment">// 組好list.innerHTML指定的HTML樣式</span></span><br><span class="line">    str += content</span><br><span class="line">   </span><br><span class="line">&#125;)</span><br><span class="line">list.<span class="property">innerHTML</span> = str;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="title function_">init</span>();</span><br></pre></td></tr></table></figure>
+<blockquote class="imgur-embed-pub" lang="en" data-id="r69I6PY"><a target="_blank" rel="noopener" href="//imgur.com/r69I6PY"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+<h3 id="插入兩個按鈕去做相對應的資料篩選"><a href="#插入兩個按鈕去做相對應的資料篩選" class="headerlink" title="插入兩個按鈕去做相對應的資料篩選"></a>插入兩個按鈕去做相對應的資料篩選</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;filter&quot;</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span> =<span class="string">&quot;免費&quot;</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span> =<span class="string">&quot;投幣式&quot;</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw,en,default">
+    <link itemprop="mainEntityOfPage" href="https://gizelliang.github.io/2024/05/18/scope/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Fish">
+      <meta itemprop="description" content="Front-End Web Development<br/>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gizel's Fantasy">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/05/18/scope/" class="post-title-link" itemprop="url">scope</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-05-18 20:30:47" itemprop="dateCreated datePublished" datetime="2024-05-18T20:30:47+08:00">2024-05-18</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2024/05/18/scope/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2024/05/18/scope/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw,en,default">
+    <link itemprop="mainEntityOfPage" href="https://gizelliang.github.io/2024/05/18/debugging/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Fish">
+      <meta itemprop="description" content="Front-End Web Development<br/>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gizel's Fantasy">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/05/18/debugging/" class="post-title-link" itemprop="url">debugging</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-05-18 19:35:21" itemprop="dateCreated datePublished" datetime="2024-05-18T19:35:21+08:00">2024-05-18</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2024/05/18/debugging/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2024/05/18/debugging/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw,en,default">
+    <link itemprop="mainEntityOfPage" href="https://gizelliang.github.io/2024/05/14/function/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Fish">
+      <meta itemprop="description" content="Front-End Web Development<br/>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gizel's Fantasy">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/05/14/function/" class="post-title-link" itemprop="url">Function</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-05-14 12:13:16" itemprop="dateCreated datePublished" datetime="2024-05-14T12:13:16+08:00">2024-05-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-05-19 14:24:10" itemprop="dateModified" datetime="2024-05-19T14:24:10+08:00">2024-05-19</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Javascript/" itemprop="url" rel="index"><span itemprop="name">Javascript</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2024/05/14/function/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2024/05/14/function/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw,en,default">
+    <link itemprop="mainEntityOfPage" href="https://gizelliang.github.io/2024/05/14/operator2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Fish">
+      <meta itemprop="description" content="Front-End Web Development<br/>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gizel's Fantasy">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/05/14/operator2/" class="post-title-link" itemprop="url">Day 1 & Day 2</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-05-14 11:58:33" itemprop="dateCreated datePublished" datetime="2024-05-14T11:58:33+08:00">2024-05-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-05-18 20:30:37" itemprop="dateModified" datetime="2024-05-18T20:30:37+08:00">2024-05-18</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Javascript/" itemprop="url" rel="index"><span itemprop="name">Javascript</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2024/05/14/operator2/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2024/05/14/operator2/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="變數命名原則"><a href="#變數命名原則" class="headerlink" title="變數命名原則"></a>變數命名原則</h1><ul>
+<li>變數的命名的首尾可以為<code>英文字母,底線,或是$</code></li>
+<li>Javascript 可以用中文命名,但有可能會亂碼</li>
+<li>不可以是<code>Reserved Words 保留字</code> or <code>關鍵字 keyword</code></li>
+<li>Javascript的語法是有<code>區分大小寫</code>的</li>
+<li>Javascript是一個<code>弱型別</code>的語言, 宣告時無需指定型別,型別的資訊只在<code>值</code> 或 <code>物件</code> 本身才有型別的資訊,<strong>變數沒有型別,值才有</strong></li>
+</ul>
+<h1 id="變數的宣告"><a href="#變數的宣告" class="headerlink" title="變數的宣告"></a>變數的宣告</h1><ul>
+<li><p>未經宣告只賦予值,造成<code>全域變數</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">m=<span class="number">1</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(m);<span class="comment">//print 1</span></span><br></pre></td></tr></table></figure></li>
+<li><p>有宣告但未賦予值, 變數預設為<code>undefined</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> m;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(m);<span class="comment">//undefined</span></span><br></pre></td></tr></table></figure></li>
+<li><p>未經宣告但就要去使用時，出現<code>ReferenceError</code> 的錯誤</p>
+</li>
+<li><p><strong>var</strong>可以<code>重複宣告</code>同一變數，但<strong>let</strong>不能</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> m = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> m = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> n =<span class="number">3</span>;</span><br><span class="line"><span class="keyword">let</span> n=<span class="number">4</span>;<span class="comment">//Uncaught Syntax Error</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="變數的型別簡介及例外"><a href="#變數的型別簡介及例外" class="headerlink" title="變數的型別簡介及例外"></a>變數的型別簡介及例外</h1><h2 id="基本型別-Primitives"><a href="#基本型別-Primitives" class="headerlink" title="基本型別 (Primitives)"></a>基本型別 (Primitives)</h2><ul>
+<li>String</li>
+<li>Number</li>
+<li>Boolean</li>
+<li>Null</li>
+<li>Undefined</li>
+<li>Symbol <code>After ES6</code></li>
+</ul>
+<h2 id="基本型別的例外"><a href="#基本型別的例外" class="headerlink" title="基本型別的例外"></a>基本型別的例外</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typeof</span> &#123;&#125;; <span class="comment">//object</span></span><br><span class="line"><span class="keyword">typeof</span> []; <span class="comment">//object</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="literal">null</span>;<span class="comment">//object</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="variable language_">window</span>.<span class="property">alert</span>; <span class="comment">//function</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="String-字串"><a href="#String-字串" class="headerlink" title="String 字串"></a>String 字串</h3><ul>
+<li>不可單引號包單引號，也不可雙引號包雙引號, 若真的有這樣的情況，可以使用跳脫字元<code>\</code><strong>Escape Character</strong></li>
+<li>多組的字串,可以用<code>+</code>連接</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&#x27;Let\&#x27;s go!&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> hello = <span class="string">&quot;Hello&quot;</span>+<span class="string">&quot;World&quot;</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="樣板字面值-Template-Literal"><a href="#樣板字面值-Template-Literal" class="headerlink" title="樣板字面值 (Template Literal)"></a>樣板字面值 (Template Literal)</h3><ul>
+<li><em><strong><code>$&#123;&#125;</code></strong></em> 可以直接置入運算式 &amp; 變數</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a =<span class="number">5</span>;</span><br><span class="line"><span class="keyword">var</span> b=<span class="number">15</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`Fifteen is <span class="subst">$&#123;a+b&#125;</span> and not <span class="subst">$&#123;<span class="number">2</span>*a + b&#125;</span>`</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="數字-Number"><a href="#數字-Number" class="headerlink" title="數字 (Number)"></a>數字 (Number)</h3><ul>
+<li>JS只有一種數值的型別,就是number, 不管是整數或帶有小數點的浮點數字皆屬於這一類</li>
+<li>Infinity (無限大), -Infinity（負無限大), NaN(不是數值,Not a Number)</li>
+</ul>
+<ol>
+<li>正數除以0 &#x3D;&gt; <code>Infinity 無限大</code></li>
+<li>負數除以0 &#x3D;&gt; <code>-Infinity 負無限大</code></li>
+<li>0&#x2F;0, Infinity&#x2F;Infinity, -Infinity&#x2F;-Infinity &#x3D;&gt;<code>NaN</code></li>
+</ol>
+<h4 id="NaN"><a href="#NaN" class="headerlink" title="NaN"></a>NaN</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">typeof</span>(<span class="title class_">NaN</span>); <span class="comment">//&#x27;number&#x27;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>NaN</code>與任何數字作運算，結果都是<code>NaN</code>,也就是說,<code>NaN</code>並不等於任何的數字，甚至是自己<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">NaN</span> === <span class="title class_">NaN</span> <span class="comment">//false</span></span><br><span class="line"><span class="built_in">isNaN</span>(<span class="string">&quot;123&quot;</span>) <span class="comment">//false String 會透過隱含的Number()轉型成數字</span></span><br><span class="line"><span class="built_in">isNaN</span>(<span class="string">&quot;NaN&quot;</span>)<span class="comment">//true 因為字串&quot;NaN&quot;無法轉型成數字</span></span><br></pre></td></tr></table></figure></li>
+<li>十進位的小數無法完美的用<code>二進位</code>的方式表示，只能用無限循環的位數來趨近於十進位的小數<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0.1</span>+<span class="number">0.2</span> === <span class="number">0.3</span> <span class="comment">//false</span></span><br></pre></td></tr></table></figure></li>
+<li>要數字精準的話，可將小數點在運算錢轉成整數，計算後再調整回來</li>
+</ul>
+<h3 id="布林值-True-False"><a href="#布林值-True-False" class="headerlink" title="布林值 (True &amp; False)"></a>布林值 (True &amp; False)</h3><ul>
+<li>通常用在<code>判斷式</code>,作為控制<code>程式流程</code>的用途</li>
+</ul>
+<h3 id="null-undefined"><a href="#null-undefined" class="headerlink" title="null &amp; undefined"></a>null &amp; undefined</h3><blockquote>
+<p>null 與 undefined的共通點就是, null只有一種值就是<code>null</code>, undefined 也只有一種值就是<code>undefined</code></p>
+</blockquote>
+<ul>
+<li>此兩者透過<code>Boolean()</code>強制轉型成Boolean時，都會代表<code>false</code><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Number</span>(<span class="literal">null</span>);<span class="comment">//0</span></span><br><span class="line"><span class="title class_">Number</span>(<span class="literal">undefined</span>); <span class="comment">//NaN</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>undefined 代表<code>尚未給值, 未定義</code>, null則表示<code>此變數沒有值</code></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="物件-Object"><a href="#物件-Object" class="headerlink" title="物件 (Object)"></a>物件 (Object)</h2><blockquote>
+<p>所有基本型別(Primitives)以外的值都是物件, <code>零至多種屬性的集合</code></p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw,en,default">
+    <link itemprop="mainEntityOfPage" href="https://gizelliang.github.io/2024/05/06/operator/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Fish">
+      <meta itemprop="description" content="Front-End Web Development<br/>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gizel's Fantasy">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/05/06/operator/" class="post-title-link" itemprop="url">operator</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-05-06 20:56:16" itemprop="dateCreated datePublished" datetime="2024-05-06T20:56:16+08:00">2024-05-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-05-19 14:22:52" itemprop="dateModified" datetime="2024-05-19T14:22:52+08:00">2024-05-19</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Javascript/" itemprop="url" rel="index"><span itemprop="name">Javascript</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2024/05/06/operator/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2024/05/06/operator/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw,en,default">
+    <link itemprop="mainEntityOfPage" href="https://gizelliang.github.io/2024/05/06/flowcontrol/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Fish">
+      <meta itemprop="description" content="Front-End Web Development<br/>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gizel's Fantasy">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/05/06/flowcontrol/" class="post-title-link" itemprop="url">logic</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-05-06 20:54:49" itemprop="dateCreated datePublished" datetime="2024-05-06T20:54:49+08:00">2024-05-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-05-14 12:01:43" itemprop="dateModified" datetime="2024-05-14T12:01:43+08:00">2024-05-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Javascript/" itemprop="url" rel="index"><span itemprop="name">Javascript</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2024/05/06/flowcontrol/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2024/05/06/flowcontrol/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw,en,default">
     <link itemprop="mainEntityOfPage" href="https://gizelliang.github.io/2024/05/05/a/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
+      <meta itemprop="name" content="Fish">
+      <meta itemprop="description" content="Front-End Web Development<br/>">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Gizel's Fantasy">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -186,7 +830,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-05-06 08:49:11" itemprop="dateModified" datetime="2024-05-06T08:49:11+08:00">2024-05-06</time>
+                <time title="Modified: 2024-05-19 14:17:00" itemprop="dateModified" datetime="2024-05-19T14:17:00+08:00">2024-05-19</time>
               </span>
 
           
@@ -214,7 +858,24 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <img src="/2024/05/05/a/cat1.png" class="">
+          
+
+<table>
+<thead>
+<tr>
+<th align="center">這是標題</th>
+<th align="center">這也是標題</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">中午吃什麼?</td>
+<td align="center">中午不吃飯</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>引用一段話</p>
+</blockquote>
+
       
     </div>
 
@@ -232,116 +893,17 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://gizelliang.github.io/2024/04/26/animation/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/04/26/animation/" class="post-title-link" itemprop="url">animation</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-04-26 13:48:30" itemprop="dateCreated datePublished" datetime="2024-04-26T13:48:30+08:00">2024-04-26</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-05-06 08:47:17" itemprop="dateModified" datetime="2024-05-06T08:47:17+08:00">2024-05-06</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/RWD/" itemprop="url" rel="index"><span itemprop="name">RWD</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/RWD/RWD1-1/" itemprop="url" rel="index"><span itemprop="name">RWD1.1</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/BasicCSS/" itemprop="url" rel="index"><span itemprop="name">BasicCSS</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/BasicCSS/BasicCSS-1-1/" itemprop="url" rel="index"><span itemprop="name">BasicCSS 1.1</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2024/04/26/animation/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2024/04/26/animation/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw,en,default">
     <link itemprop="mainEntityOfPage" href="https://gizelliang.github.io/2024/04/26/self-introduction/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
+      <meta itemprop="name" content="Fish">
+      <meta itemprop="description" content="Front-End Web Development<br/>">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Gizel's Fantasy">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -358,6 +920,13 @@
 
               <time title="Created: 2024-04-26 13:18:11" itemprop="dateCreated datePublished" datetime="2024-04-26T13:18:11+08:00">2024-04-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-05-14 11:48:02" itemprop="dateModified" datetime="2024-05-14T11:48:02+08:00">2024-05-14</time>
+              </span>
 
           
   
@@ -402,93 +971,22 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://gizelliang.github.io/2024/04/26/Object/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw,en,default">
+    <link itemprop="mainEntityOfPage" href="https://gizelliang.github.io/2024/04/26/array&object/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
+      <meta itemprop="name" content="Fish">
+      <meta itemprop="description" content="Front-End Web Development<br/>">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Gizel's Fantasy">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2024/04/26/Object/" class="post-title-link" itemprop="url">Object</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-04-26 11:20:39" itemprop="dateCreated datePublished" datetime="2024-04-26T11:20:39+08:00">2024-04-26</time>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2024/04/26/Object/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2024/04/26/Object/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://gizelliang.github.io/2024/04/26/Array/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/04/26/Array/" class="post-title-link" itemprop="url">Array</a>
+            <a href="/2024/04/26/array&object/" class="post-title-link" itemprop="url">Array</a>
         </h2>
 
         <div class="post-meta">
@@ -505,8 +1003,17 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-05-06 08:55:28" itemprop="dateModified" datetime="2024-05-06T08:55:28+08:00">2024-05-06</time>
+                <time title="Modified: 2024-05-14 11:51:22" itemprop="dateModified" datetime="2024-05-14T11:51:22+08:00">2024-05-14</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Javascript/" itemprop="url" rel="index"><span itemprop="name">Javascript</span></a>
+                </span>
+            </span>
 
           
   
@@ -517,8 +1024,8 @@
       </span>
       <span class="post-meta-item-text">Disqus: </span>
     
-    <a title="disqus" href="/2024/04/26/Array/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2024/04/26/Array/" itemprop="commentCount"></span>
+    <a title="disqus" href="/2024/04/26/array&object/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2024/04/26/array&object/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -606,28 +1113,28 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
-  <div class="site-description" itemprop="description"></div>
+  <p class="site-author-name" itemprop="name">Fish</p>
+  <div class="site-description" itemprop="description">Front-End Web Development<br/></div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -658,9 +1165,9 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Fish</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
   </div>
 
         
@@ -686,7 +1193,7 @@
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
 
 <script src="/js/next-boot.js"></script>

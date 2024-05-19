@@ -107,3 +107,4 @@ Number(undefined); //NaN
 
 ## 物件 (Object)
 >所有基本型別(Primitives)以外的值都是物件, `零至多種屬性的集合`
+

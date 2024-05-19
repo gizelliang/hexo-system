@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Gizel&#39;s Fantasy</title>
+  
+  <subtitle>程式新手轉職血淚史。</subtitle>
+  <link href="https://gizelliang.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://gizelliang.github.io/"/>
+  <updated>2024-05-19T07:43:20.491Z</updated>
+  <id>https://gizelliang.github.io/</id>
+  
+  <author>
+    <name>Fish</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>forEach2</title>
+    <link href="https://gizelliang.github.io/2024/05/19/forEach2/"/>
+    <id>https://gizelliang.github.io/2024/05/19/forEach2/</id>
+    <published>2024-05-19T07:19:21.000Z</published>
+    <updated>2024-05-19T07:43:20.491Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="forEach-搭配-DOM做整合"><a href="#forEach-搭配-DOM做整合" class="headerlink" title="forEach 搭配 DOM做整合"></a>forEach 搭配 DOM做整合</h2><h3 id="決定資料格式-HTML"><a href="#決定資料格式-HTML" class="headerlink" title="決定資料格式(HTML)"></a>決定資料格式(HTML)</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;list&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure><h3 id="初始化一個空字串，再塞入ul-list-的innerHTML"><a href="#初始化一個空字串，再塞入ul-list-的innerHTML" class="headerlink" title="初始化一個空字串，再塞入ul.list 的innerHTML"></a>初始化一個空字串，再塞入ul.list 的innerHTML</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> data=[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="title class_">Charge</span>:<span class="string">&quot;Free&quot;</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;Kathy Charge Station&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="title class_">Charge</span>:<span class="string">&quot;Coin&quot;</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;Sophie Charge Station&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="title class_">Charge</span>:<span class="string">&quot;Free&quot;</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;Cecilia Charge Station&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="title class_">Charge</span>:<span class="string">&quot;Coin&quot;</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;George Charge Station&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">]</span><br><span class="line"><span class="keyword">const</span> list = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.list&quot;</span>);</span><br><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;&quot;</span>;</span><br><span class="line">data.<span class="title function_">forEach</span>(<span class="keyword">function</span>(<span class="params">item, index</span>)&#123;</span><br><span class="line">    <span class="keyword">let</span> content = <span class="string">`&lt;li&gt;<span class="subst">$&#123;item.name&#125;</span>, <span class="subst">$&#123;item.Charge&#125;</span>&lt;/li&gt;`</span>;<span class="comment">// 組好list.innerHTML指定的HTML樣式</span></span><br><span class="line">    str += content</span><br><span class="line">   </span><br><span class="line">&#125;)</span><br><span class="line">list.<span class="property">innerHTML</span> = str;</span><br></pre></td></tr></table></figure><h3 id="將要抓資料的forEach部分用function包覆，才可以一開始就在網頁上呈現需要的HTML樣式"><a href="#將要抓資料的forEach部分用function包覆，才可以一開始就在網頁上呈現需要的HTML樣式" class="headerlink" title="將要抓資料的forEach部分用function包覆，才可以一開始就在網頁上呈現需要的HTML樣式"></a>將要抓資料的forEach部分用function包覆，才可以一開始就在網頁上呈現需要的HTML樣式</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> data=[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="title class_">Charge</span>:<span class="string">&quot;Free&quot;</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;Kathy Charge Station&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="title class_">Charge</span>:<span class="string">&quot;Coin&quot;</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;Sophie Charge Station&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="title class_">Charge</span>:<span class="string">&quot;Free&quot;</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;Cecilia Charge Station&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="title class_">Charge</span>:<span class="string">&quot;Coin&quot;</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;George Charge Station&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">init</span>(<span class="params"></span>)&#123;</span><br><span class="line"><span class="keyword">const</span> list = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.list&quot;</span>);</span><br><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;&quot;</span>;</span><br><span class="line">data.<span class="title function_">forEach</span>(<span class="keyword">function</span>(<span class="params">item, index</span>)&#123;</span><br><span class="line">    <span class="keyword">let</span> content = <span class="string">`&lt;li&gt;<span class="subst">$&#123;item.name&#125;</span>, <span class="subst">$&#123;item.Charge&#125;</span>&lt;/li&gt;`</span>;<span class="comment">// 組好list.innerHTML指定的HTML樣式</span></span><br><span class="line">    str += content</span><br><span class="line">   </span><br><span class="line">&#125;)</span><br><span class="line">list.<span class="property">innerHTML</span> = str;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="title function_">init</span>();</span><br></pre></td></tr></table></figure><blockquote class="imgur-embed-pub" lang="en" data-id="r69I6PY"><a href="//imgur.com/r69I6PY"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script><h3 id="插入兩個按鈕去做相對應的資料篩選"><a href="#插入兩個按鈕去做相對應的資料篩選" class="headerlink" title="插入兩個按鈕去做相對應的資料篩選"></a>插入兩個按鈕去做相對應的資料篩選</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;filter&quot;</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span> =<span class="string">&quot;免費&quot;</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span> =<span class="string">&quot;投幣式&quot;</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;forEach-搭配-DOM做整合&quot;&gt;&lt;a href=&quot;#forEach-搭配-DOM做整合&quot; class=&quot;headerlink&quot; title=&quot;forEach 搭配 DOM做整合&quot;&gt;&lt;/a&gt;forEach 搭配 DOM做整合&lt;/h2&gt;&lt;h3 id=&quot;決定資料格</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>scope</title>
+    <link href="https://gizelliang.github.io/2024/05/18/scope/"/>
+    <id>https://gizelliang.github.io/2024/05/18/scope/</id>
+    <published>2024-05-18T12:30:47.000Z</published>
+    <updated>2024-05-18T12:30:47.908Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>debugging</title>
+    <link href="https://gizelliang.github.io/2024/05/18/debugging/"/>
+    <id>https://gizelliang.github.io/2024/05/18/debugging/</id>
+    <published>2024-05-18T11:35:21.000Z</published>
+    <updated>2024-05-18T11:35:21.329Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Function</title>
+    <link href="https://gizelliang.github.io/2024/05/14/function/"/>
+    <id>https://gizelliang.github.io/2024/05/14/function/</id>
+    <published>2024-05-14T04:13:16.000Z</published>
+    <updated>2024-05-19T06:24:10.962Z</updated>
+    
+    
+    
+    
+    <category term="Javascript" scheme="https://gizelliang.github.io/categories/Javascript/"/>
+    
+    
+    <category term="WesBos" scheme="https://gizelliang.github.io/tags/WesBos/"/>
+    
+    <category term="Video" scheme="https://gizelliang.github.io/tags/Video/"/>
+    
+    <category term="HexSchool" scheme="https://gizelliang.github.io/tags/HexSchool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Day 1 &amp; Day 2</title>
+    <link href="https://gizelliang.github.io/2024/05/14/operator2/"/>
+    <id>https://gizelliang.github.io/2024/05/14/operator2/</id>
+    <published>2024-05-14T03:58:33.000Z</published>
+    <updated>2024-05-18T12:30:37.206Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="變數命名原則"><a href="#變數命名原則" class="headerlink" title="變數命名原則"></a>變數命名原則</h1><ul><li>變數的命名的首尾可以為<code>英文字母,底線,或是$</code></li><li>Javascript 可以用中文命名,但有可能會亂碼</li><li>不可以是<code>Reserved Words 保留字</code> or <code>關鍵字 keyword</code></li><li>Javascript的語法是有<code>區分大小寫</code>的</li><li>Javascript是一個<code>弱型別</code>的語言, 宣告時無需指定型別,型別的資訊只在<code>值</code> 或 <code>物件</code> 本身才有型別的資訊,<strong>變數沒有型別,值才有</strong></li></ul><h1 id="變數的宣告"><a href="#變數的宣告" class="headerlink" title="變數的宣告"></a>變數的宣告</h1><ul><li><p>未經宣告只賦予值,造成<code>全域變數</code></p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">m=<span class="number">1</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(m);<span class="comment">//print 1</span></span><br></pre></td></tr></table></figure></li><li><p>有宣告但未賦予值, 變數預設為<code>undefined</code></p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> m;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(m);<span class="comment">//undefined</span></span><br></pre></td></tr></table></figure></li><li><p>未經宣告但就要去使用時，出現<code>ReferenceError</code> 的錯誤</p></li><li><p><strong>var</strong>可以<code>重複宣告</code>同一變數，但<strong>let</strong>不能</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> m = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> m = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> n =<span class="number">3</span>;</span><br><span class="line"><span class="keyword">let</span> n=<span class="number">4</span>;<span class="comment">//Uncaught Syntax Error</span></span><br></pre></td></tr></table></figure></li></ul><h1 id="變數的型別簡介及例外"><a href="#變數的型別簡介及例外" class="headerlink" title="變數的型別簡介及例外"></a>變數的型別簡介及例外</h1><h2 id="基本型別-Primitives"><a href="#基本型別-Primitives" class="headerlink" title="基本型別 (Primitives)"></a>基本型別 (Primitives)</h2><ul><li>String</li><li>Number</li><li>Boolean</li><li>Null</li><li>Undefined</li><li>Symbol <code>After ES6</code></li></ul><h2 id="基本型別的例外"><a href="#基本型別的例外" class="headerlink" title="基本型別的例外"></a>基本型別的例外</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typeof</span> &#123;&#125;; <span class="comment">//object</span></span><br><span class="line"><span class="keyword">typeof</span> []; <span class="comment">//object</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="literal">null</span>;<span class="comment">//object</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="variable language_">window</span>.<span class="property">alert</span>; <span class="comment">//function</span></span><br></pre></td></tr></table></figure><hr><h3 id="String-字串"><a href="#String-字串" class="headerlink" title="String 字串"></a>String 字串</h3><ul><li>不可單引號包單引號，也不可雙引號包雙引號, 若真的有這樣的情況，可以使用跳脫字元<code>\</code><strong>Escape Character</strong></li><li>多組的字串,可以用<code>+</code>連接</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&#x27;Let\&#x27;s go!&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> hello = <span class="string">&quot;Hello&quot;</span>+<span class="string">&quot;World&quot;</span>;</span><br></pre></td></tr></table></figure><h3 id="樣板字面值-Template-Literal"><a href="#樣板字面值-Template-Literal" class="headerlink" title="樣板字面值 (Template Literal)"></a>樣板字面值 (Template Literal)</h3><ul><li><em><strong><code>$&#123;&#125;</code></strong></em> 可以直接置入運算式 &amp; 變數</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a =<span class="number">5</span>;</span><br><span class="line"><span class="keyword">var</span> b=<span class="number">15</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`Fifteen is <span class="subst">$&#123;a+b&#125;</span> and not <span class="subst">$&#123;<span class="number">2</span>*a + b&#125;</span>`</span>)</span><br></pre></td></tr></table></figure><h3 id="數字-Number"><a href="#數字-Number" class="headerlink" title="數字 (Number)"></a>數字 (Number)</h3><ul><li>JS只有一種數值的型別,就是number, 不管是整數或帶有小數點的浮點數字皆屬於這一類</li><li>Infinity (無限大), -Infinity（負無限大), NaN(不是數值,Not a Number)</li></ul><ol><li>正數除以0 &#x3D;&gt; <code>Infinity 無限大</code></li><li>負數除以0 &#x3D;&gt; <code>-Infinity 負無限大</code></li><li>0&#x2F;0, Infinity&#x2F;Infinity, -Infinity&#x2F;-Infinity &#x3D;&gt;<code>NaN</code></li></ol><h4 id="NaN"><a href="#NaN" class="headerlink" title="NaN"></a>NaN</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">typeof</span>(<span class="title class_">NaN</span>); <span class="comment">//&#x27;number&#x27;</span></span><br></pre></td></tr></table></figure><ul><li><code>NaN</code>與任何數字作運算，結果都是<code>NaN</code>,也就是說,<code>NaN</code>並不等於任何的數字，甚至是自己<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">NaN</span> === <span class="title class_">NaN</span> <span class="comment">//false</span></span><br><span class="line"><span class="built_in">isNaN</span>(<span class="string">&quot;123&quot;</span>) <span class="comment">//false String 會透過隱含的Number()轉型成數字</span></span><br><span class="line"><span class="built_in">isNaN</span>(<span class="string">&quot;NaN&quot;</span>)<span class="comment">//true 因為字串&quot;NaN&quot;無法轉型成數字</span></span><br></pre></td></tr></table></figure></li><li>十進位的小數無法完美的用<code>二進位</code>的方式表示，只能用無限循環的位數來趨近於十進位的小數<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0.1</span>+<span class="number">0.2</span> === <span class="number">0.3</span> <span class="comment">//false</span></span><br></pre></td></tr></table></figure></li><li>要數字精準的話，可將小數點在運算錢轉成整數，計算後再調整回來</li></ul><h3 id="布林值-True-False"><a href="#布林值-True-False" class="headerlink" title="布林值 (True &amp; False)"></a>布林值 (True &amp; False)</h3><ul><li>通常用在<code>判斷式</code>,作為控制<code>程式流程</code>的用途</li></ul><h3 id="null-undefined"><a href="#null-undefined" class="headerlink" title="null &amp; undefined"></a>null &amp; undefined</h3><blockquote><p>null 與 undefined的共通點就是, null只有一種值就是<code>null</code>, undefined 也只有一種值就是<code>undefined</code></p></blockquote><ul><li>此兩者透過<code>Boolean()</code>強制轉型成Boolean時，都會代表<code>false</code><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Number</span>(<span class="literal">null</span>);<span class="comment">//0</span></span><br><span class="line"><span class="title class_">Number</span>(<span class="literal">undefined</span>); <span class="comment">//NaN</span></span><br></pre></td></tr></table></figure><blockquote><p>undefined 代表<code>尚未給值, 未定義</code>, null則表示<code>此變數沒有值</code></p></blockquote></li></ul><h2 id="物件-Object"><a href="#物件-Object" class="headerlink" title="物件 (Object)"></a>物件 (Object)</h2><blockquote><p>所有基本型別(Primitives)以外的值都是物件, <code>零至多種屬性的集合</code></p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;變數命名原則&quot;&gt;&lt;a href=&quot;#變數命名原則&quot; class=&quot;headerlink&quot; title=&quot;變數命名原則&quot;&gt;&lt;/a&gt;變數命名原則&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;變數的命名的首尾可以為&lt;code&gt;英文字母,底線,或是$&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Jav</summary>
+      
+    
+    
+    
+    <category term="Javascript" scheme="https://gizelliang.github.io/categories/Javascript/"/>
+    
+    
+    <category term="008Days" scheme="https://gizelliang.github.io/tags/008Days/"/>
+    
+    <category term="Book" scheme="https://gizelliang.github.io/tags/Book/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>operator</title>
+    <link href="https://gizelliang.github.io/2024/05/06/operator/"/>
+    <id>https://gizelliang.github.io/2024/05/06/operator/</id>
+    <published>2024-05-06T12:56:16.000Z</published>
+    <updated>2024-05-19T06:22:52.204Z</updated>
+    
+    
+    
+    
+    <category term="Javascript" scheme="https://gizelliang.github.io/categories/Javascript/"/>
+    
+    
+    <category term="Video" scheme="https://gizelliang.github.io/tags/Video/"/>
+    
+    <category term="HexSchool" scheme="https://gizelliang.github.io/tags/HexSchool/"/>
+    
+    <category term="Wesbos" scheme="https://gizelliang.github.io/tags/Wesbos/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>logic</title>
+    <link href="https://gizelliang.github.io/2024/05/06/flowcontrol/"/>
+    <id>https://gizelliang.github.io/2024/05/06/flowcontrol/</id>
+    <published>2024-05-06T12:54:49.000Z</published>
+    <updated>2024-05-14T04:01:43.513Z</updated>
+    
+    
+    
+    
+    <category term="Javascript" scheme="https://gizelliang.github.io/categories/Javascript/"/>
+    
+    
+    <category term="WesBos" scheme="https://gizelliang.github.io/tags/WesBos/"/>
+    
+    <category term="Video" scheme="https://gizelliang.github.io/tags/Video/"/>
+    
+    <category term="HexSchool" scheme="https://gizelliang.github.io/tags/HexSchool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>a</title>
+    <link href="https://gizelliang.github.io/2024/05/05/a/"/>
+    <id>https://gizelliang.github.io/2024/05/05/a/</id>
+    <published>2024-05-05T10:02:00.000Z</published>
+    <updated>2024-05-19T06:17:00.146Z</updated>
+    
+    <content type="html"><![CDATA[<table><thead><tr><th align="center">這是標題</th><th align="center">這也是標題</th></tr></thead><tbody><tr><td align="center">中午吃什麼?</td><td align="center">中午不吃飯</td></tr></tbody></table><blockquote><p>引用一段話</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;這是標題&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;這也是標題&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;中午吃什麼?&lt;/td&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>self-introduction</title>
+    <link href="https://gizelliang.github.io/2024/04/26/self-introduction/"/>
+    <id>https://gizelliang.github.io/2024/04/26/self-introduction/</id>
+    <published>2024-04-26T05:18:11.000Z</published>
+    <updated>2024-05-14T03:48:02.916Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Array</title>
+    <link href="https://gizelliang.github.io/2024/04/26/array&amp;object/"/>
+    <id>https://gizelliang.github.io/2024/04/26/array&amp;object/</id>
+    <published>2024-04-26T03:19:40.309Z</published>
+    <updated>2024-05-14T03:51:22.204Z</updated>
+    
+    
+    
+    
+    <category term="Javascript" scheme="https://gizelliang.github.io/categories/Javascript/"/>
+    
+    
+    <category term="WesBos" scheme="https://gizelliang.github.io/tags/WesBos/"/>
+    
+    <category term="Video" scheme="https://gizelliang.github.io/tags/Video/"/>
+    
+  </entry>
+  
+</feed>

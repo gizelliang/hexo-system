@@ -22,18 +22,18 @@
 
   <meta name="description" content="Front-End Web Development">
 <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="https://gizelliang.github.io/categories/index.html">
+<meta property="og:title" content="about">
+<meta property="og:url" content="https://gizelliang.github.io/about/index.html">
 <meta property="og:site_name" content="Gizel&#39;s Fantasy">
 <meta property="og:description" content="Front-End Web Development">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2020-02-17T08:49:23.000Z">
-<meta property="article:modified_time" content="2024-05-05T07:48:58.030Z">
+<meta property="article:published_time" content="2024-05-14T03:34:34.000Z">
+<meta property="article:modified_time" content="2024-05-14T03:34:34.591Z">
 <meta property="article:author" content="Fish">
 <meta property="article:tag" content="前端,後端,全端,網頁,技術,網頁開發,前端開發,後端開發,JavaScript,HTML,CSS,SCSS">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://gizelliang.github.io/categories/">
+<link rel="canonical" href="https://gizelliang.github.io/about/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>categories | Gizel's Fantasy
+  <title>about | Gizel's Fantasy
 </title>
   
 
@@ -173,7 +173,7 @@
     <div class="post-block" lang="zh-tw">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">categories
+<h1 class="post-title" itemprop="name headline">about
 </h1>
 
 <div class="post-meta">
@@ -187,15 +187,7 @@
       
       
       <div class="post-body">
-          <div class="category-all-page">
-            <div class="category-all-title">
-              1 category in total
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/">Javascript</a><span class="category-list-count">5</span></li></ul>
-            </div>
-          </div>
-        
+          
       </div>
       
       
@@ -210,6 +202,13 @@
 
           </div>
           
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -378,6 +377,26 @@
   }
   // defer loading until the whole page loading is completed
   window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://gizelliang.github.io/about/index.html";
+    this.page.identifier = "about/index.html";
+    this.page.title = "about";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://gizelliang.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
 </script>
 
 </body>
