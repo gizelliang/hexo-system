@@ -1,6 +1,6 @@
 ---
-title: [WesBos]Function
+title: WesBos_Function
 date: 2024-05-14 12:13:16
-tags: [WesBos,HexSchool,Video]
+tags: [WesBos,Video]
 categories: [Javascript]
 ---

@@ -1,11 +1,13 @@
 ---
-title: [008天] Day 1 & Day 2
+title: 008Days_Day 1 & Day 2
 date: 2024-05-14 11:58:33
 tags: [008Days,Book]
 categories: [Javascript]
 ---
 
 # 變數命名原則
+## 變數架構
+![image](https://i.imgur.com/ia79Zze.png)
 
 * 變數的命名的首尾可以為`英文字母,底線,或是$`
 * Javascript 可以用中文命名,但有可能會亂碼

@@ -1,7 +1,7 @@
 ---
-title: [WesBos] Operator
+title: WesBos_Operator
 date: 2024-05-06 20:56:16
-tags: [Wesbos,HexSchool,Video]
+tags: [WesBos,Video]
 categories: [Javascript]
 ---
 

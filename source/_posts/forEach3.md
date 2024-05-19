@@ -1,16 +1,18 @@
 ---
-title: [Hex]forEach搭配DOM做整合
+title: Hex_forEach DOM整合
 date: 2024-05-19 17:02:41
 tags: [HexSchool,Video]
 categories: [Javascript]
 ---
+# 網頁預想呈現畫面
+![Image](https://i.imgur.com/r69I6PY.png)
+
 ## 決定資料格式(HTML)
 ```html
 <ul class="list">
     <li></li>
 </ul>
 ```
-
 ## 初始化一個空字串，再塞入ul.list 的innerHTML
 ```js
 let data=[

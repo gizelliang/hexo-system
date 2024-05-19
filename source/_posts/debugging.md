@@ -1,5 +1,6 @@
 ---
-title: [WesBos]Debugging
+title: WesBos_Debugging
 date: 2024-05-18 19:35:21
-tags:
+tags: [WesBos,Video]
+categories: [Javascript]
 ---
