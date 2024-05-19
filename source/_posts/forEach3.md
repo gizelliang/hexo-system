@@ -45,25 +45,6 @@ list.innerHTML = str;
 ## 將要抓資料的forEach部分用function包覆，才可以一開始就在網頁上呈現需要的HTML樣式
 
 ```js
-let data=[
-  {
-    Charge:"Free",
-    name: "Kathy Charge Station"
-  },
-  {
-    Charge:"Coin",
-    name: "Sophie Charge Station"
-  },
-  {
-    Charge:"Free",
-    name: "Cecilia Charge Station"
-  },
-  {
-    Charge:"Coin",
-    name: "George Charge Station"
-  },
-]
-
 function init(){
 const list = document.querySelector(".list");
 let str = "";
@@ -78,8 +59,7 @@ list.innerHTML = str;
 init();
 ```
 
-
-### 插入兩個按鈕去做相對應的資料篩選, 監聽區塊為div.filter區塊
+## 插入兩個按鈕去做相對應的資料篩選, 監聽區塊為div.filter區塊
 
 ```html
  <div class="filter">
@@ -87,3 +67,17 @@ init();
         <input type="button" value ="投幣式">
     </div>
 ```
+
+```js
+const stationFilter = document.querySelector('.filter');
+console.log(stationFilter);
+stationFilter.addEventListener("click",function(e){
+  console.log(e);
+  console.log(e.target.value);
+}
+)
+```
+![stationFilter](https://i.imgur.com/XW4aTJ5.png)
+![Image](https://i.imgur.com/7Xvd1PJ.png)
+
+>stationFilter的區塊中並非所有區塊都有addEventListener, 只有點到按鈕才會觸發事件,才可以console.log(e.target.value)
