@@ -1,9 +1,9 @@
 ---
 title: forEach2
 date: 2024-05-19 15:19:21
-tags:
+tags: [HexSchool,Video]
+categories: [Javascript]
 ---
-
 
 ## forEach 搭配 DOM做整合
 
@@ -77,9 +77,10 @@ list.innerHTML = str;
 
 init();
 ```
+### init()後網頁呈現的畫面
 <blockquote class="imgur-embed-pub" lang="en" data-id="r69I6PY"><a href="//imgur.com/r69I6PY"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-### 插入兩個按鈕去做相對應的資料篩選
+### 插入兩個按鈕去做相對應的資料篩選, 監聽區塊為div.filter區塊
 
 ```html
  <div class="filter">
