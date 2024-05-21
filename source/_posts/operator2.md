@@ -1,5 +1,5 @@
 ---
-title: 008Days_Day 1 & Day 2
+title: 008Days_Day 1
 date: 2024-05-14 11:58:33
 tags: [008Days,Book]
 categories: [Javascript]

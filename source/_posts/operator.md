@@ -1,6 +1,6 @@
 ---
-title: WesBos_Operator
+title: 008Days_Day 2
 date: 2024-05-06 20:56:16
-tags: [WesBos,Video]
+tags: [008Days,Book]
 categories: [Javascript]
 ---
