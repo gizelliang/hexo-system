@@ -3,6 +3,7 @@ title: Hex_forEach DOM整合
 date: 2024-05-19 17:02:41
 tags: [HexSchool,Video]
 categories: [Javascript]
+description: 六角學院JS直播forEach練習
 ---
 # 網頁預想呈現畫面
 ![image](https://i.imgur.com/usFRj1I.png)
