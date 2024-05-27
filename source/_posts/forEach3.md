@@ -1,5 +1,5 @@
 ---
-title: Hex_forEach DOM整合
+title: Hex_forEach題型
 date: 2024-05-19 17:02:41
 tags: [HexSchool,Video]
 categories: [Javascript]
@@ -7,6 +7,21 @@ description: 六角學院JS直播forEach練習
 ---
 # 網頁預想呈現畫面
 ![image](https://i.imgur.com/usFRj1I.png)
+
+## 每日任務 Day25 forEach補充
+```js
+let data = ["a", "b", "c"];
+
+// 參數 item 代表陣列中目前正在被處理的那個元素
+// 參數 index 代表陣列中目前正在被處理的那個元素的索引值
+// 參數 array 代表被處理的陣列本身，在此為 data
+data.forEach(function(item, index, array){
+  console.log(item, index, array);
+})
+```
+![Image](https://i.imgur.com/1gjNwl0.png)
+>這邊需要特別提醒，在 forEach() 函式內用 return 無法停止函式進行下一個 item。除非程式碼有誤，否則並沒有中止 forEach() 的辦法
+>
 
 ## 決定資料格式(HTML)
 ```html
