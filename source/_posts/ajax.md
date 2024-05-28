@@ -2,6 +2,7 @@
 title: ajax
 date: 2024-05-24 11:10:43
 tags:
+description: 六角JS直播預錄
 ---
 ## AJAX 基本介紹
 

@@ -143,11 +143,11 @@ stationFilter.addEventListener("click",function(e){
 )
 ```
 
->**之所以使用e.target.value而非e.target.nodeName是因為兩顆按鈕篩選出來的資料不一樣，若使用e.target.nodeName通常就是只有一顆按鈕**
++ **之所以使用e.target.value而非e.target.nodeName是因為兩顆按鈕篩選出來的資料不一樣，若使用e.target.nodeName通常就是只有一顆按鈕**
 
->**e**會把事件觸發時的物件狀態快照起來,event通常在大括號中存活,Function結束時就會消失,**e.target** 會呈現出當下點擊到的HTML架構
+  + **e** 會把事件觸發時的物件狀態快照起來,event通常在大括號中存活,Function結束時就會消失,**e.target** 會呈現出當下點擊到的HTML架構
 
->**e.target.nodeName**則會呈現出當下的ＨＴＭＬ標籤(例如~INPUT,LI)
+   + **e.target.nodeName**則會呈現出當下的ＨＴＭＬ標籤(例如~INPUT,LI)
 
 >innerHTML會將其中的HTML全部清空後再帶入要塞入的內容
 
