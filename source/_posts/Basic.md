@@ -74,5 +74,54 @@ description: 盒模型, inline & block 及CSS初步設定
 * margin 向外推
 * padding 向內推
 
+## margin:auto & text-align:center
 
+[Codepen Example](https://codepen.io/gizelliang/pen/mdYRYBa)
 
+```css
+margin:auto;
+``` 
+* 依照父元素的寬度來做平均分配,水平置中
+
+```css
+text-align:center;
+```
+* 區塊內的文字段落要靠左，中，還是右
+
+```html
+<div class="wrap">
+  <div class="header"></div>
+  <div class="content"></div>
+  <div class="footer"></div>
+</div>
+```
+```css
+.wrap{
+  width:100px;
+  height:100px;
+  background:green;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.header{
+  height:20px;
+  background:blue;
+}
+
+.content{
+  height:30px;
+  background:gray;
+}
+
+.footer{
+  background:yellow;
+  height:10px;
+}
+```
+
+![Image](https://i.imgur.com/dcVFCKr.png)
+
+>區塊元素會自適應父層的寬度，不寫死高度的話，區塊元素會隨著內文延伸
+
+>網頁預設字體大小是16px,傾向不要寫死高度，都讓內文來撐高
