@@ -6,6 +6,7 @@ categories: [HTML]
 description: Kevin Powell Conquering Responsive Layout
 ---
 ## Percentages vs Fixed widths
+## Percentages on the child
 
 >區塊元素若不設定具體寬度的話，通常就會佔滿整個畫面(代表預設寬度就是100%的父層元素)
 
@@ -31,3 +32,8 @@ description: Kevin Powell Conquering Responsive Layout
 
 }
 ```
+>子元素若有內文的話，也最好不要有固定高度，可以依靠內文來撐開高度
+
+>有固定高度的話，用overflow:hidden會截掉部分內文
+
+
