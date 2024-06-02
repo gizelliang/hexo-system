@@ -3,7 +3,7 @@ title: Hex_W4_Function
 date: 2024-05-14 12:13:16
 tags: [HexSchool,Video]
 categories: [Javascript]
-description: 六角學院JS直播第四堂 & JS核心函數對應高階課程
+description: 六角學院JS直播第四堂 & 第五堂JS核心篇
 ---
 ## 函式的特性及使用時機
 * 函式可以重複呼叫
