@@ -1,5 +1,5 @@
 ---
-title: Day2 CSS em and rem explained
+title: Day2 CSS em and rem explained & Day3 Adding in a max-width
 date: 2024-06-01 21:12:13
 tags: [21DaysChallenge, Video]
 categories: [HTML]
@@ -56,3 +56,8 @@ description: Kevin Powell Conquering Responsive Layout
 * 相對來說，rem比較一致，因為其參考的基準值只有根部html的字體大小值
 
 <span style="color:red">px是絕對值，所以通常會盡量避免使用在RWD中，有可能因此需要更多斷點(media queries)</span>
+
+## max-width
+* 為了提升使用者體驗，有些區塊會針對內文設定<mark>max-width</mark>,避免區塊在放大縮小時，內文會無限延伸
+
+[max-width example](https://codepen.io/gizelliang/pen/rNgyvPa)
