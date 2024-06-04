@@ -204,4 +204,35 @@ flex:1;
 
 [Codepen Example](https://codepen.io/gizelliang/pen/OJYmzPb)
 
-## Flexbox flex-grow, flex-shrink and flex-basis
+><mark>flex其實是flex-grow & flex-shrink的簡寫</mark>
+
+```css
+flex:1 5 400px;
+```
+* flex有三個值時，依序為grow,shrink,basis
+
+## Flexbox flex-grow, flex-shrink and flex-basis(On the child element)
+
+[Codepen Example](https://codepen.io/gizelliang/pen/WNBjdxX)
+
+```css
+flex-basis:400px;
+```
+
+>flex-basis是每個子元素的基準值
+
+![Image](https://i.imgur.com/GLf6PEk.png)
+
+![Image](https://i.imgur.com/ZcA6NRX.png)
+
+```css
+flex-grow:1;
+```
+>網頁預設的flex-grow為0,當有額外空間時，會將空間分配給那些flex-grow值越大的子元素,按照flex-grow值等比例分配多的空間
+
+```css
+flex-shrink:1;
+```
+>flex-shrink代表當視窗不夠大時，一個子元素收縮的倍率
+
+>flex-shrink的預設值為1,代表當網頁不夠所有子元素的flex-basis長度時，會自動縮小每個子元素所佔的空間
