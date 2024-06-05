@@ -143,3 +143,15 @@ background: url(../image/facebook-logo.webp) #ffec00 no-repeat right bottom;
 }
 ```
 ## 圖片種類介紹 ( gif、jpg、png )
+
+* gif
+1. 有動畫的圖片
+2. 有支援透明的背景
+
+* jpg
+1. 沒有動畫效果
+2. 沒有支援透明的背景(無法設定background-color)
+
+* png-24 & png-8
+1. png-8僅支援256色 png-24支援的顏色較豐富
+2. 有支援透明效果(可以設定background-color)
