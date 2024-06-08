@@ -147,6 +147,7 @@ background: url(../image/facebook-logo.webp) #ffec00 no-repeat right bottom;
 * gif
 1. 有動畫的圖片
 2. 有支援透明的背景
+3. 與png-8一樣，僅支援256色
 
 * jpg
 1. 沒有動畫效果

@@ -236,3 +236,6 @@ flex-shrink:1;
 >flex-shrink代表當視窗不夠大時，一個子元素收縮的倍率
 
 >flex-shrink的預設值為1,代表當網頁不夠所有子元素的flex-basis長度時，會自動縮小每個子元素所佔的空間
+
+## Nesting Flexbox
+[Codepen Example](https://codepen.io/gizelliang/pen/bGyrBxm)
