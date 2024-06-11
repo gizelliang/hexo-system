@@ -3,7 +3,7 @@ title: Amos_Basic Selector
 date: 2024-05-21 15:24:43
 tags: [Amos,Book]
 categories: [HTML/CSS]
-description: 金魚都能懂的CSS選取器第二章 & 六角 div 與後代選擇器運用
+description: 金魚都能懂的CSS選取器第一章+第二章 & 六角 div 與後代選擇器運用
 ---
 ## 擬態選取器 :hover, :active
 * :hover是滑鼠滑過去的效果,:active是滑鼠按著不放的效果
