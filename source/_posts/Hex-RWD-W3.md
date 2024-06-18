@@ -180,12 +180,36 @@ Sets the maximum width of an element, preventing the width property from becomin
 	}
 }
 ```
+## 動線設計：並非所有內容都要全部塞到網頁內容
 
-## 影音觀念補充
-動線設計：並非所有內容都要全部塞到網頁內容
-斷點時機：設計多欄式佈局的必要觀念
-點擊範圍：設計讓人好點選的元素
-少即是多：避免資訊量爆炸
-斷點元素：只有手機才會顯示的功能與Layout切換
+* PC版的內容不用全部都塞到手機版中, 篩選必要的留在手機版中即可
 
-[影音連結](https://courses.hexschool.com/courses/670051/lectures/11953526)
+* 這邊額外補充一下，中文內文單行字元 30～40 會比較好閱讀，英文則是 32～80 個字元數
+
+更詳細一點的規範與說明，可以看以下參考連結唷
+
+https://www.ibm.com/design/language/typography/type-basics/
+
+https://www.ibm.com/...ography/type-basics/
+
+## 點擊範圍：設計讓人好點選的元素
+
+* 手指點擊範圍約44px, 所以各個欄位的點選範圍高度都需要至少44px
+
+## 少即是多：避免資訊量爆炸
+
+### PC版
+＊ 縮圖
+＊ 標題
+＊ 局部內文
+＊ 其他說明
+
+### 手機版
+* 縮圖
+* 標題
+
+## 斷點元素：只有手機才會顯示的功能與Layout切換
+
+![Image](https://i.imgur.com/taYekWM.png)
+
+* 768px Ipad直式的解析度

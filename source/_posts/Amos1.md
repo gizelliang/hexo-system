@@ -22,14 +22,14 @@ description: Amos Youtube Video & CSS屬性第三章(背景)
 ```css
 background-image: linear-gradient(to 目標方向, 起始色彩, 結束色彩);
 ```
-* to top (下方漸層到上方)**0deg**
-* to right (左方漸層到右方)**90deg**
-* to bottom (上方漸層到下方)**180deg**
-* to left (右方漸層到左方)**270deg**
-* to top left (右下漸層到左上)**315deg**
-* to top right (左下漸層到右上)**45deg**
-* to bottom right (左上漸層到右下)**135deg**
-* to bottom left (右上漸層到左下)**225deg**
+* to top (下方漸層到上方) **0deg**
+* to right (左方漸層到右方)  **90deg**
+* to bottom (上方漸層到下方)  **180deg**
+* to left (右方漸層到左方)  **270deg**
+* to top left (右下漸層到左上)  **315deg**
+* to top right (左下漸層到右上)  **45deg**
+* to bottom right (左上漸層到右下)  **135deg**
+* to bottom left (右上漸層到左下)  **225deg**
 
 ```css
 background-image: linear-gradient(角度, 起始色彩 起始色彩位置, 結束色彩 結束色彩位置);
