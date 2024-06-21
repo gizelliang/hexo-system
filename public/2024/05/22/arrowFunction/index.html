@@ -28,7 +28,7 @@
 <meta property="og:description" content="JS直播箭頭函數預錄">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2024-05-21T16:29:24.000Z">
-<meta property="article:modified_time" content="2024-05-24T03:10:25.344Z">
+<meta property="article:modified_time" content="2024-06-21T02:56:33.045Z">
 <meta property="article:author" content="Fish">
 <meta property="article:tag" content="Video">
 <meta property="article:tag" content="HexSchool">
@@ -199,7 +199,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-05-24 11:10:25" itemprop="dateModified" datetime="2024-05-24T11:10:25+08:00">2024-05-24</time>
+                <time title="Modified: 2024-06-21 10:56:33" itemprop="dateModified" datetime="2024-06-21T10:56:33+08:00">2024-06-21</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -243,7 +243,7 @@
 </blockquote>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//此為函式陳述式</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">numA</span>(<span class="number">25</span>));<span class="comment">//print 625</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">numA</span>(<span class="params">x</span>)&#123;</span><br><span class="line">    <span class="keyword">return</span> x*x;</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">numA</span>(<span class="number">4</span>));<span class="comment">//print 16</span></span><br></pre></td></tr></table></figure>
 <h2 id="箭頭函式寫法"><a href="#箭頭函式寫法" class="headerlink" title="箭頭函式寫法"></a>箭頭函式寫法</h2><ol>
-<li>如果函式搭配到Return<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> numberA = <span class="keyword">function</span>(<span class="params">x</span>)&#123;</span><br><span class="line">    <span class="keyword">return</span> x*x;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Arrow Function, Return 可省略</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">numberA</span> = (<span class="params">x</span>)=&gt;&#123; <span class="keyword">return</span> x*x&#125;;</span><br><span class="line"><span class="keyword">const</span> <span class="title function_">numberB</span> = (<span class="params">x</span>)=&gt; x*x*x;</span><br></pre></td></tr></table></figure></li>
+<li>如果函式搭配到Return <strong>箭頭函式會自帶return</strong><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> numberA = <span class="keyword">function</span>(<span class="params">x</span>)&#123;</span><br><span class="line">    <span class="keyword">return</span> x*x;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Arrow Function, Return 可省略</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">numberA</span> = (<span class="params">x</span>)=&gt;&#123; <span class="keyword">return</span> x*x&#125;;</span><br><span class="line"><span class="keyword">const</span> <span class="title function_">numberB</span> = (<span class="params">x</span>)=&gt; x*x*x;</span><br></pre></td></tr></table></figure></li>
 <li>如果只有一個參數，可以省略括號<br>多行程式碼的話，大括號就不可省略<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">numberA</span> = x=&gt;&#123; <span class="keyword">return</span> x*x&#125;;</span><br><span class="line"><span class="keyword">const</span> <span class="title function_">numberB</span> = x=&gt; x*x*x;</span><br></pre></td></tr></table></figure></li>
 <li>沒有參數，還是要有空括號<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">numberA</span> = (<span class="params"></span>)=&gt;&#123; <span class="keyword">return</span> x*x&#125;;</span><br><span class="line"><span class="keyword">const</span> <span class="title function_">numberB</span> = (<span class="params"></span>)=&gt; x*x*x;</span><br></pre></td></tr></table></figure></li>
 </ol>
@@ -266,8 +266,8 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2024/05/21/selector1/" rel="prev" title="Amos_Basic Selector">
-      <i class="fa fa-chevron-left"></i> Amos_Basic Selector
+    <a href="/2024/05/21/selector1/" rel="prev" title="CSS優先權 & 基本類型CSS選取器">
+      <i class="fa fa-chevron-left"></i> CSS優先權 & 基本類型CSS選取器
     </a></div>
       <div class="post-nav-item">
     <a href="/2024/05/24/ajax/" rel="next" title="ajax">
@@ -352,7 +352,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-count">25</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -365,7 +365,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>

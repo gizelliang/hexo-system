@@ -1,10 +1,12 @@
 ---
-title: Object
+title: 物件與陣列(淺拷貝/深拷貝 & 傳址/傳值)
 date: 2024-06-17 16:10:38
 tags: [HexSchool,Video]
 categories: [Javascript]
 description: 第四周核心（By value, by reference or by sharing + Shallow Copy/Deep Copy）
 ---
+
+[淺/深拷貝]https://www.thisweb.dev/post/js-deep-clone
 ## Pass by reference & Pass by value
 * 物件與陣列不屬於基本型別，所以不是傳值（Pass by value）是傳參考(Pass by reference)
 

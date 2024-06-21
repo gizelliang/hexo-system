@@ -30,7 +30,7 @@ console.log(numA(4));//print 16
 ```
 ## 箭頭函式寫法
 
-1. 如果函式搭配到Return
+1. 如果函式搭配到Return **箭頭函式會自帶return**
 ```js
 const numberA = function(x){
     return x*x;
