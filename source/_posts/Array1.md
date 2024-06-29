@@ -96,6 +96,7 @@ const newOrder2 = people.filter(function(item,index){ return item.price >=80;})
 //將判斷式放入filter中
 ```
 
+
 ### findIndex
 #### 情境：找出特定位置的索引位置，老闆說牛肉沒了,要改牛肉麵變成牛肉湯麵
 
@@ -169,8 +170,81 @@ const htmlTemplate = people.map((obj,key)=>`<li>${obj.order},${obj.price}</li>`
 ).join('');
 ```
 
-### reduce
+### reduce & forEach
 #### 情境:老闆要收錢啦
 
 >reduce當中帶入的參數並非為物件本身與索引位置
 
+```js
+let total = 0;//起始值
+people.forEach(function(obj,key){
+  total +=obj.price;
+});
+```
+```js
+let total = people.reduce(function(acc,cur){
+  console.log(`Total:${acc}`)
+  console.log(`Item:${cur.price}`)
+  console.log(acc,cur);
+  return acc + 1;
+},0)
+
+/* acc為累計值，cur為當前值＊/
+/* 0 為起始值 */
+```
+```js
+let total = people.reduce((acc,cur) => acc + cur.price
+,0)
+```
+![Image](https://i.imgur.com/qYt2yvm.png)
+
+#### 利用reduce來分類
+```js
+const people = [
+  {name:"Kyle",age:26},
+  {name:"John",age:31},
+  {name:"Sally",age:42},
+  {name:"Jill",age:42},
+]
+
+const result = people.reduce((groupedPeople,person)=>{
+  const age = person.age
+  if (groupedPeople[age]==null)
+  groupedPeople[age]=[]
+  groupedPeople[age].push(person)
+  return groupedPeople
+},{})
+
+console.log(result);
+```
+![Image](https://i.imgur.com/oWEWUyk.png)
+
+#### reduce的四個參數
+
+```js
+const numbers = [13,2,5];
+const sum = numbers.reduce((total,number,index, array)=>{
+  console.log(array);
+  return total + number
+},0)
+
+console.log(sum);
+```
+![Image](https://i.imgur.com/AmhZntX.png)
+
+>初始值可設可不設，但通常建議一定要設初始值，不然reduce就會將陣列中的第一個值當作total,若陣列為空陣列，則會出現error
+
+>reduce的四個參數中通常只會用total, number(即累計值跟當前物件)
+
+>初始值是指acc的起始值, cur不是指當前值，而是代表當前的物件
+
+### sort
+#### 排序
+```js
+const peopleSort = people.sort((a, b) => {
+  return b.price - a.price;
+});
+console.log(peopleSort);
+```
+>sort會兩兩相互比較
+>a & b 代表同一陣列中的兩個物件
