@@ -154,7 +154,7 @@ a[href$=".png" i]{
     background-image:url("icon-png.png");
 }
 ```
-4. **[屬性*=值]**, 代表只要HTML中對應屬性的值有包含特定文字即可，不用管到底是開頭還是結尾
+4. [屬性*=值], 代表只要HTML中對應屬性的值有包含特定文字即可，不用管到底是開頭還是結尾
 
 ```html
 <img src="" alt="我的貓">
@@ -165,5 +165,50 @@ img[alt*="我"][alt*="貓"]{
 }
 ```
 5. **[屬性~=值]**, 此選取器針對英文，代表包含特定單字而非字串
+
+```html
+<img src="" alt="Amos is a youtuber">
+```
+```css
+img[alt~="Amos"]{
+
+}
+```
+## 實際範例
+
+```css
+a[href]{
+    font-weight:bold;
+}
+a[href^="www.yahoo.com"]{
+font-weight:normal;
+}
+```
+```css
+a:not([href^="www.yahoo.com"]){
+    font-weight:bold;
+}
+```
+## ＋跟屁蟲選取器
+
+>選取對象Ａ＋選取對象Ｂ, 只會選取在緊跟著選取對象Ａ同層的Ｂ
+
+[Codepen](https://codepen.io/gizelliang/pen/PovrpwN)
+[Codepen](https://codepen.io/gizelliang/pen/dyEBvoB)
+## ~連接號之整串同層選取器
+>選取對象Ａ～選取對象Ｂ,可以選取到Ａ後面整串的Ｂ
+[Codepen](https://codepen.io/gizelliang/pen/zYQVZxJ)
+
+[Codepen](https://codepen.io/gizelliang/pen/abrgJvP)
+
+## >子代選取器
+
+* 選取對象Ａ>選取對象Ｂ
+    * 僅僅選取到子層，並非所有後代都可以選到
+* 選取對象A 空格 選取對象B
+    * 所有後代都可以選到
+[Codepen](https://codepen.io/gizelliang/pen/yLWdMOv)
+
+[多層選單](https://codepen.io/bad_printer/pen/oNvOgyz)
 
 [文章參考連結](https://www.thisweb.dev/post/css-specificity)
