@@ -78,6 +78,12 @@ Sets the maximum width of an element, preventing the width property from becomin
 
 >斷點不建議設太多個，大概3~4個算是正常的範圍
 
+![Image](https://i.imgur.com/4vH0kAB.png)
+
+* 桌機    >= 992px（視設計稿而定，有時可能要用到最大的：>= 1400px）
+* 平板    768px ～ 991px
+* 手機    <= 767px（視設計稿而定，有時可能要用到最小的：< 576px）
+
 ```css
 .container{
 		padding: 0 15px;

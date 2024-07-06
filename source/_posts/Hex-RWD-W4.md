@@ -97,7 +97,7 @@ $font-s:$font-m*0.8;
 
 ### @content簡化RWD的寫法
 
-* ＠mixin有點像假設出一個media query的代名詞(pad, iphone,tablet......etc),這個media query的代名詞可以用@include代入，@content則是將media query中的內容帶入@mixin中
+* ＠mixin有點像假設出一個media query的代名詞(pad, iphone,tablet......etc),這個media query的代名詞可以用@include代入各個SCSS檔案中，@content則是作為各個斷點下的樣式的代名詞，將media query中的內容帶入@mixin中
 
 ```scss
 @mixin iphone5{
@@ -118,11 +118,11 @@ $font-s:$font-m*0.8;
 
 ### Sass 7-1 Pattern 中的 7-1 代表著七個資料夾以及一個檔案，基本上就是為了方便區分 Sass。
 
-* base
+* base： CSS Reset 、SMACSS 的初始化或是字型的基礎設置
     * _reset.scss
     * _base.scss
     * _fontStyle.scss
-* components
+* components：概念就跟 Bootstrap 的元件一樣
     * _button.scss
     * _dropdown.scss
     * _alert.scss
@@ -130,7 +130,7 @@ $font-s:$font-m*0.8;
     * _header.scss
     * _footer.scss
     * _nav.scss
-* pages
+* pages：通常會放一些只有這個頁面才會使用的樣式
     * _index.scss
     * _content.scss
 * themes
