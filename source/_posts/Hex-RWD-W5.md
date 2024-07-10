@@ -16,7 +16,7 @@ description: 六角學院切版直播第五堂+週三助教文字講解
 
 </form>
 ```
-* input的value為元件中顯示的文字
+* input的value為元件中顯示的文字初始值
 ```html
 <input type="submit" value=“送出“>
 ```
@@ -26,6 +26,7 @@ description: 六角學院切版直播第五堂+週三助教文字講解
 <label for = "myName">姓名:</label>
 <input id="myName" type="text" name="myName">
 ```
+* 
 ## <input type="date"> 不要使用
 
 * 無法改動行事曆的樣式

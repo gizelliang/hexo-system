@@ -61,6 +61,23 @@ $font-m:16px;
 $font-l:$font-m*1.2;
 $font-s:$font-m*0.8;
 ```
+* 變數的文字大小base設定為1rem, 其他等倍放大或縮小
+```scss
+//_variables.scss
+
+// 文字大小設定
+$font-size-base: 1rem; // 16px
+
+$font-size-sm: $font-size-base * 0.875; // 14px
+
+$h1-font-size: $font-size-base * 4; // 64px
+$h2-font-size: $font-size-base * 3; // 48px
+$h3-font-size: $font-size-base * 1.75; // 28px
+$h4-font-size: $font-size-base * 1.5; // 24px
+$h5-font-size: $font-size-base * 1.25; // 20px
+$h6-font-size: $font-size-base; // 16px
+
+```
 ### @mixin: 將常用語法化簡為自己的知識庫
 
 >@mixin幫助記住ＣＳＳ技巧，讓你不用再因回想原理而中斷思緒
@@ -126,7 +143,7 @@ $font-s:$font-m*0.8;
     * _button.scss
     * _dropdown.scss
     * _alert.scss
-* layout
+* layout: 針對版面去做區分，重複的區塊就可以列入
     * _header.scss
     * _footer.scss
     * _nav.scss
@@ -137,6 +154,8 @@ $font-s:$font-m*0.8;
     * _theme.scss
     * _admin.scss
 * utils: 通常都是放一些工具類型的檔案，例如 p-1、mt-10 這類的生成工具
-* vendors
+* vendors: 放外部的第三方套件
+  * _bootstrap.scss
+  * _swiper.scss
 * 主要引入的檔案: all.scss or main.scss
 
