@@ -67,3 +67,19 @@ $(document).ready(function(){
   });
   });
 ```
+
+## .addClass() .toggleClass()
+
+* 加上CSS樣式是一種常見用來寫動畫效果的方式, 相比用Jquery來說, 用addClass or toggleClass 透過CSS來載入效果的方式效能較好
+
+## .attr() 改變屬性
+
+* 動態改變HTML屬性的值，第一個參數是HTML的屬性，第二個則是要代入的值
+
+```js
+$('a').attr('href', '屬性要代入的值')
+```
+
+## .html 動態載入
+
+* 事件觸發後，動態載入的html檔不會存在原始碼中
