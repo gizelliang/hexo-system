@@ -78,6 +78,11 @@ $h5-font-size: $font-size-base * 1.25; // 20px
 $h6-font-size: $font-size-base; // 16px
 
 ```
+### 迴圈寫法介紹 (@for, @while, @each)
+#### 基本原則
+1. #{}為一種帶入變數的方法
+2. 須先定義$max（終止值)以避免無窮迴圈
+
 ### @mixin: 將常用語法化簡為自己的知識庫
 
 >@mixin幫助記住ＣＳＳ技巧，讓你不用再因回想原理而中斷思緒
