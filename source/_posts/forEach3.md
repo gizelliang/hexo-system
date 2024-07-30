@@ -3,7 +3,8 @@ title: Hex_forEach題型
 date: 2024-05-19 17:02:41
 tags: [HexSchool,Video]
 categories: [Javascript]
-description: 六角學院JS直播forEach練習
+description: 六角學院JS直播forEach練習 
+新增資料 & 資料顯示功能拆解
 ---
 # 網頁預想呈現畫面
 ![image](https://i.imgur.com/usFRj1I.png)
