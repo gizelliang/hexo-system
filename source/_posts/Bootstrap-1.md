@@ -163,3 +163,142 @@ html{
     * 套用box-sizing:border-box
     * 套用list的Normalize Reset樣式
     * 可以在Google開發者工具中的:root 尋找變數色彩
+
+## 文字運用
+### h1~h6作為語意化標籤及單純樣式
+
+>若不想要套用h1~h6的語意，單純只想要用樣式，就可以將其用作class來帶入
+
+```html
+<div class="demo">
+  <p class="h1">h1. Bootstrap heading</p>
+  <p class="h2">h2. Bootstrap heading</p>
+  <p class="h6">h3. Bootstrap heading</p>
+  <p class="h4">h4. Bootstrap heading</p>
+  <p class="h3">h5. Bootstrap heading</p>
+  <p class="h3">h6. Bootstrap heading</p>
+</div>
+```
+### 將文字<small>變小</small>
+```html
+<small></small>
+```
+### display-1~display-6作為class來帶入
+```html
+<div class="demo">
+  <h1 class="display-6">Display 1</h1>
+  <h1 class="h6">Display 2</h1>
+  <h1 class="display-5">Display 3</h1>
+  <h1 class="h5">Display 4</h1>
+  <h1 class="display-3">Display 5</h1>
+  <h1 class="h3">Display 6</h1>
+</div>
+```
+![Image](https://i.imgur.com/DheuSAk.png)
+
+### 前導文本
+```html
+<div class="demo">
+  <p>
+    <span class="lead">
+    This is a lead paragraph. It stands out from regular paragraphs.
+  </span>
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, quasi omnis eos magnam perspiciatis cupiditate iusto aspernatur harum deleniti mollitia libero, ab repudiandae maiores? Nisi atque ex alias impedit laboriosam.
+</p>
+</div>
+```
+![Image](https://i.imgur.com/FO3bXbE.png)
+
+### 行內<del>文本</del><ins>元素</ins>
+```html
+<div class="demo">
+  <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+  <p><del>This line of text is meant to be treated as deleted text.</del></p>
+  <!--線從文字上橫槓-->
+  <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+ <!--文字下底線-->
+  <p><small>This line of text is meant to be treated as fine print.</small></p>
+  <p><strong>This line rendered as bold text.</strong></p>
+  <p><em>This line rendered as italicized text.</em></p>
+  <!--<s></s> & <u></u> 已經不太常使用-->
+</div>
+```
+### <abbr>縮寫標籤</abbr>
+#### title ="" 表示鼠標停留時顯示出的內容
+#### class="initialism"表示字比縮寫更小
+
+```html
+<div class="demo">
+  <p><abbr title="attribute">attr</abbr></p>
+  <p><abbr title="HyperText Markup Language" class="initialism">加入 initialism</abbr></p> 
+</div>
+```
+
+### 引用 & 引用細節
+
+```html
+<div class="demo">
+  <figure>
+    <blockquote class="blockquote">
+      <p>A well-known quote, contained in a blockquote element.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      Someone famous in <cite title="Source Title">Source Title</cite>
+    </figcaption>
+  </figure>
+</div>
+```
+### list-inline & list-inline-item 帶入class
+
+>將列表轉成行內元素
+
+### class="text-start" or "text-end" 對齊(start 左邊，end 右邊)
+```html
+<div class="demo">
+  <figure class="text-start">
+    <blockquote class="blockquote">
+      <p>A well-known quote, contained in a blockquote element.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer text-end">
+      Someone famous in <cite title="Source Title">Source Title</cite>
+    </figcaption>
+  </figure>
+</div>
+```
+![Image](https://i.imgur.com/XrZMIwZ.png)
+
+### class="text-truncate" 
+>將過長的文字截斷
+
+## 圖片運用
+### class="img-fluid"
+
+>使圖片能夠自適應裝置大小
+
+### class="rounded"
+
+>圖片有圓角
+
+### class="img-thumbnail"
+
+>有1px 邊框的圖片縮略圖
+
+[Codepen Example](https://codepen.io/gizelliang/pen/MWMoZda)
+
+### class="clearfix"下在父層，class="float-start" & "float-end"在子層的連用
+[Codepen](https://codepen.io/gizelliang/pen/gONRZVQ)
+
+### 圖片本身加class="d-block mx-auto" 水平置中
+[Codepen](https://codepen.io/gizelliang/pen/eYwRxYz)
+
+>image預設的屬性為**display:inline-block**, 可以用**text-center**加在父層來置中
+[Codepen](https://codepen.io/gizelliang/pen/jOjwdPE)
+
+## 圖片區 (figure & figcaption)
+
+```html
+<figure class="text-end figure">
+  <img src="https://picsum.photos/900/700/" >
+  <figcaption class="figure-caption">Deep Blue Sea</figcaption>
+  </figure>
+```
