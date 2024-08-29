@@ -142,4 +142,119 @@ $spacers: (
 
 >使文字大小隨著視窗縮放來放大縮小
 
-## 自定義通用類別
+## 自定義通用類別（node_modules資料夾中將_utilities.scss複製後移到自己的stylesheets>helpers資料夾中）
+```css
+$utilities: (
+  "opacity": (
+    /* 此處會對應到最後輸出的class名稱首字*/
+    property: opacity,
+    /*此處會對應到大括號中的屬性*/
+    values: (
+      0: 0,
+      25: .25,
+      50: .5,
+      75: .75,
+      100: 1,
+    /*此處會對應到屬性的值及class名稱的結尾*/
+    )
+  )
+);
+```
+```css
+.opacity-0 { opacity: 0; }
+.opacity-25 { opacity: .25; }
+.opacity-50 { opacity: .5; }
+.opacity-75 { opacity: .75; }
+.opacity-100 { opacity: 1; }
+```
+### 運用class屬性來縮寫
+
+```css
+$utilities: (
+  "opacity": (
+    property: opacity,
+    class: o,
+    values: (
+      0: 0,
+      25: .25,
+      50: .5,
+      75: .75,
+      100: 1,
+    )
+  )
+);
+```
+```css
+.o-0 { opacity: 0 !important; }
+.o-25 { opacity: .25 !important; }
+.o-50 { opacity: .5 !important; }
+.o-75 { opacity: .75 !important; }
+.o-100 { opacity: 1 !important; }
+```
+### 運用responsive:true來將中斷點加入
+
+```css
+$utilities: (
+  "opacity": (
+    property: opacity,
+    responsive: true,
+    values: (
+      0: 0,
+      25: .25,
+      50: .5,
+      75: .75,
+      100: 1,
+    )
+  )
+);
+```
+```css
+.opacity-0 { opacity: 0 !important; }
+.opacity-25 { opacity: .25 !important; }
+.opacity-50 { opacity: .5 !important; }
+.opacity-75 { opacity: .75 !important; }
+.opacity-100 { opacity: 1 !important; }
+
+@media (min-width: 576px) {
+  .opacity-sm-0 { opacity: 0 !important; }
+  .opacity-sm-25 { opacity: .25 !important; }
+  .opacity-sm-50 { opacity: .5 !important; }
+  .opacity-sm-75 { opacity: .75 !important; }
+  .opacity-sm-100 { opacity: 1 !important; }
+}
+
+@media (min-width: 768px) {
+  .opacity-md-0 { opacity: 0 !important; }
+  .opacity-md-25 { opacity: .25 !important; }
+  .opacity-md-50 { opacity: .5 !important; }
+  .opacity-md-75 { opacity: .75 !important; }
+  .opacity-md-100 { opacity: 1 !important; }
+}
+
+@media (min-width: 992px) {
+  .opacity-lg-0 { opacity: 0 !important; }
+  .opacity-lg-25 { opacity: .25 !important; }
+  .opacity-lg-50 { opacity: .5 !important; }
+  .opacity-lg-75 { opacity: .75 !important; }
+  .opacity-lg-100 { opacity: 1 !important; }
+}
+
+@media (min-width: 1200px) {
+  .opacity-xl-0 { opacity: 0 !important; }
+  .opacity-xl-25 { opacity: .25 !important; }
+  .opacity-xl-50 { opacity: .5 !important; }
+  .opacity-xl-75 { opacity: .75 !important; }
+  .opacity-xl-100 { opacity: 1 !important; }
+}
+
+@media (min-width: 1400px) {
+  .opacity-xxl-0 { opacity: 0 !important; }
+  .opacity-xxl-25 { opacity: .25 !important; }
+  .opacity-xxl-50 { opacity: .5 !important; }
+  .opacity-xxl-75 { opacity: .75 !important; }
+  .opacity-xxl-100 { opacity: 1 !important; }
+}
+```
+
+## 使用 Bootstrap 方法，產生獨立元件
+
