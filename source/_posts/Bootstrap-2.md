@@ -257,4 +257,75 @@ $utilities: (
 ```
 
 ## 使用 Bootstrap 方法，產生獨立元件
+### 若要透過變數來產生一個新的樣式的按鈕的話
+1. 新增$theme-colors裡面的屬性跟值,可以套用到所有的地方
 
+```css
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "hex": #69F0AE,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+```
+```html
+<button type="button" class="btn btn-primary">這是按鈕</button>
+<button type="button" class="btn btn-hex">這是按鈕</button>
+```
+
+2. 只想要在特定的元件使用客製化的屬性跟值(Buttons to Mixins)
+
+* 需要在**stylesheets**中創建一個新的**components**資料夾來存放
+**_customs-buttons.scss** (前方的下底線會讓scss不被編譯出來)
+* 需要在**all.scss**中引入
+```css
+@import "./components/custom-buttons";
+```
+* **_customs-buttons.scss**中的@include寫法如下，才可以將色彩引入
+```css
+.btn-custom-hex{
+  @include button-variant(#69F0AE,#69F0AE)
+}
+
+.btn-outline-hex{
+    @include button-outline-variant(#69F0AE,#69F0AE)
+}
+```
+
+#### 官網文件寫法參考
+```css
+ @each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}
+```
+
+## 在 Sass 中，自訂高可用性的元件
+
+![Image](https://i.imgur.com/Nd7mLPN.png)
+* **_utilities.scss & _variables.scss**為變數檔，主要放在stylesheets>helpers資料夾中
+
+>定義元件時，需預期該元件是可以重複利用的
+
+![Image](https://i.imgur.com/AaVBLIF.png)
+
+>建立完元件後，需在**all.scss**資料中將其引入
+
+![Image](https://i.imgur.com/3USjqgK.png)
+
+* 在編寫元件的SCSS時，須避免過度巢狀 & 盡量多使用變數
+* 各元件的SCSS中所編寫的變數只能在該元件的SCSS中使用，若要整個專案都能使用的話，就編寫在stylesheets>helpers>_variables.scss中
+
+* 統一把狀態(hover, active)編寫在scss檔案中的最下方
